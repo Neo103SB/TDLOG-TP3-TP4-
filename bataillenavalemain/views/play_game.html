@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="styles/style.css">
+<head>
+ <meta charset="utf-8">
+ <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+ <title>Bataille navale - Jeu</title>
+</head>
+<body>
+<div id="menu">
+ <!-- menu à créer -->
+</div>
+<div class="centered-element">
+ <h1>Bataille Navale - Jeu</h1>
+ <img src="images/logo.png">
+</div>
+<div class="vertical-container">
+ <h2>Mes vaisseaux</h2>
+ <table id="my-vessels">
+ <tr>
+ <th>Type</th>
+ <th>Position</th>
+ <th>Etat</th>
+ </tr>
+ <!-- les lignes du tableau seront ajoutées dynamiquement -->
+ </table>
+</div>
+<div class="vertical-container">
+ <h2>Tir</h2>
+ <form id="shoot-form">
+ <label for="x">X:</label><br>
+ <input type="number" id="x" name="x" required><br>
+ <label for="y">Y:</label><br>
+ <input type="number" id="y" name="y" required><br>
+ <label for="z">Z:</label><br>
+ <input type="number" id="z" name="z" required><br><br>
+ <input class="submit-button" type="submit" value="Feu">
+ </form>
+</div>
+<div class="form-result" id="shoot-result"></div>
+</body>
+</html>
